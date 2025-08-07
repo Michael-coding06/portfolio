@@ -41,8 +41,8 @@ const Portfolio = () => {
             title: "My Portfolio",
             description: "My diary documenting my growth and experiences on the path to becoming a seasoned programmer.",
             image: portfolio,
-            liveLink: "#",
-            codeLink: "#"
+            liveLink: "https://michael-coding06.github.io/portfolio/",
+            codeLink: "https://github.com/Michael-coding06/portfolio.git"
         },
     ];
     const navigateProject = (direction) => {

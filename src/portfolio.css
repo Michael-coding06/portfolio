@@ -688,6 +688,8 @@ nav ul li:hover {
     }
     .project-links{
         display: flex;
-        /* flex-direction: column; */
+    }
+    .project-links .btn{
+        font-size: 10px;
     }
 }

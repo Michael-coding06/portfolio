@@ -204,6 +204,13 @@ nav ul li:hover {
     color: rgba(248, 250, 252, 0.9);
     line-height: 1.8;
 }
+.skills-section p i {
+    color: #bfcc83;
+    text-shadow: 
+        0 0 5px rgba(228, 253, 117, 0.5),
+        0 0 10px rgba(228, 253, 117, 0.3);
+    font-weight: 500;
+}
 
 /* ===== ABOUT SECTION ===== */
 #About > div {

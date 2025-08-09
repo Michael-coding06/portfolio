@@ -59,12 +59,11 @@ const Portfolio = () => {
     };
     const typeWriter = async () => {
         const list_of_text = [
-            "Or Michael",
-            "Current AI Agent Explorer",
-            'StackOverflow Expert User',
-            'Self-taught Programmer',
-            'Quick Learner',
-            'Three-Language Juggler',
+            "Or Just Michael",
+            'AI Agent Whisperer',
+            "404 Problem Solver",
+            'Stack Overflow Searcher',
+            '3 Language Polyglot',
         ]
         const element = document.querySelector('.subtitle');
         element.textContent = '';
@@ -160,7 +159,7 @@ const Portfolio = () => {
                     <div className="header-content">
                         <div className="header-text">Khoa, Tran Viet</div>
                         <div className="subtitle"></div>
-                        <p>Self-taught programmer motivated by passion and personal projects. Expert of searching bugs on Google and quickly scanning the best StackOverflow answers.</p> 
+                        <p>Agentic AI enthusiast with full-stack skills to turn ideas into real-world products. Driven to explore, build, and (occasionally) debug by speed-scrolling Stack Overflow.</p> 
                         <div className="button-group">
                             <a target = "_blank" href="https://www.linkedin.com/in/khoatranviet/" className="btn">My Linkedin</a>
                             <a target = "_blank" href="https://github.com/Michael-coding06" className="btn">My Github</a>
@@ -176,9 +175,9 @@ const Portfolio = () => {
                     <span className="text-secondary">{`{`}</span>
                 </header>
                 <div>
-                    <p>
-                        I am a self-taught programmer with a passion for learning and exploring new technologies. My journey in programming has been driven by curiosity and the desire to create impactful solutions. I thrive on challenges and enjoy diving deep into complex problems to find elegant solutions.
-                    </p>
+                    <p>I’ve been captivated by programming since secondary school, where I first developed skills in website development. During my first academic semester, the power of cutting-edge AI deeply inspired me, leading me to explore machine learning techniques and libraries like PyTorch and TensorFlow. In semester 2, I discovered Agentic AI and instantly fell in love with it.</p>
+                    <p>Over the summer, I immersed myself in my NUS Orbital project and managed to integrate a chat bot into my website.</p>
+                    <p>I recently created a new GitHub account dedicated to showcasing only projects that truly reflect who I am. Although there aren’t many projects there yet, I’m committed to continuously building and demonstrating my skills and knowledge through them. </p>
                     <img src={img} alt="Khoa Tran Viet" className="profile-image" />
                 </div>
                 <span className="text-secondary">{`}`}</span>
@@ -189,10 +188,9 @@ const Portfolio = () => {
                     <span className="text-secondary">{`{`}</span>
                 </header>
                 <div className="skills-section">
-                    <p>I excel in dissecting complex problems into manageable tasks, essential in crafting robust,
-                        mainatainable code in large-scale projects. I'm driven by challenges, always seeking opportunities to learn and grow. 
-                        My expertise spans multiple programming languages, frameworks, and tools, allowing me to adapt quickly to new environments and technologies.
-                    </p>
+                    <p>I thrive in chaos. I excel at breaking enormous problems into manageable tasks and completing them step by step. The more expectations and requirements I receive, the harder I push myself to excel. I’m always seeking opportunities to test my skills and knowledge, growing into a new, improved version of myself. </p>
+                    <p>My self-directed learning approach empowers me to quickly graph and adapt to new technologies autonomously, encompassing full-stack development, machine learning, and agent AI. </p>    
+                    <p><i>I’m well aware that my role is replaceable, that’s why I’m working to be indispensable.</i></p>
                     <div className="floating-skills">
                         <img src= {react} alt="React" className="floating-icon" />
                         <img src= {github} alt="GitHub" className="floating-icon" />
@@ -252,10 +250,10 @@ const Portfolio = () => {
                 </header>
                 <div className="work">
                     <p>
-                        I am currently exploring opportunities to apply my skills in a professional setting. I am eager to contribute to innovative projects and collaborate with talented teams.
+                        I’m currently looking for opportunities to bring my skills into a real-world setting. I’m fully dedicated to leveling up my abilities and building meaningful projects. I’ve always been learning and preparing to take my first step into the professional world.
                     </p>
                     <p>
-                        If you are looking for a passionate and dedicated programmer, don't hesitate to reach out and help me fill in this section. . .😭!
+                        If you’re looking for a passionate and dedicated programmer, I’d be grateful for the chance to bring value to your project … and maybe turn this section into an actual job story… 🥲
                     </p>
                 </div>
                 <span className="text-secondary">{`}`}</span>

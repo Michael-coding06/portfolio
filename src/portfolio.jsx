@@ -1,59 +1,9 @@
 import React, { useEffect, useState } from "react";
 import './portfolio.css';
-import img from './img/ava.jpg'
-
 import khoa from './img/Khoa.png'
-import timetable from './img/projects/timetable.png';
-import portfolio from './img/projects/portfolio.png';
-
-import Khoa0 from './img/Khoa_pixel/2.png';
-import Khoa1 from './img/Khoa_pixel/3.png';       
-import Khoa2 from './img/Khoa_pixel/4.png';
-
-
+import resume from './img/Tran Viet Khoa Resume_final.pdf'
 import { data } from "./data";
 const Portfolio = () => {
-    const [typing, setTyping] = useState(true);
-    const [currentProject, setCurrentProject] = useState(0);
-    const [isSliding, setIsSliding] = useState(false);
-
-    const [currentKhoa, setCurrentKhoa] = useState(0);
-    const khoaImages = [Khoa1, Khoa2, Khoa0];
-    useEffect(() => {
-        const khoaInterval = setInterval(() => {
-            setCurrentKhoa((prev) => (prev + 1) % khoaImages.length);
-        }, 500);
-
-        return () => clearInterval(khoaInterval);
-    }, []);
-    const projects = [
-        {
-            title: "NUS Schedule Boss",
-            description: `An intelligent scheduling tool for NUS students to ogranize their modules and personal commitments, leveraging OpenAI API to optimize timetable management.`,
-            image: timetable,
-            liveLink: "https://michael-coding06.github.io/NUS-ScheduleBoss/",
-            codeLink: "https://github.com/Michael-coding06/NUS-ScheduleBoss.git"
-        },
-        {
-            title: "My Portfolio",
-            description: "My diary documenting my growth and experiences on the path to becoming a seasoned programmer.",
-            image: portfolio,
-            liveLink: "https://michael-coding06.github.io/portfolio/",
-            codeLink: "https://github.com/Michael-coding06/portfolio.git"
-        },
-    ];
-    const navigateProject = (direction) => {
-        if (isSliding) return;
-        setIsSliding(true);
-        setTimeout(() => {
-            if (direction === 'next') {
-                setCurrentProject((prev) => (prev + 1) % projects.length);
-            } else {
-                setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
-            }
-            setIsSliding(false);
-        }, 150);
-    };
     const typeWriter = async () => {
         const list_of_text = [
             'AI Agent Whisperer',
@@ -87,53 +37,15 @@ const Portfolio = () => {
     useEffect(() => {
         typeWriter();
     }, []);
-    const handleScroll = (sectionId) => {
-        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        const targetSection = document.getElementById(sectionId);
-        const sectionElement = targetSection.querySelector('.section-header');
-        TextScramble(sectionId, sectionElement);
-    };
-    const TextScramble = (word, element) => {
-        const chars = '!<>-_\\/[]{}—69810+=+*^?#________';
-        let position = 0;
-        const animate = () => {
-            let currentText = '';
-            for (let i = 0; i < position; i++) {
-                currentText += word[i];
-            }
-            if (position < word.length) {
-                for (let i = 0; i < word.length - position; i++) {
-                    currentText += chars[Math.floor(Math.random() * chars.length)];
-                }
-            }
-            if(element) {
-                element.textContent = currentText;
-            }
-            if(Math.random() < 0.1) {
-                position++;
-            }
-            if(position <= word.length) {
-                requestAnimationFrame(() => animate());
-            }
-            
-        };
-        animate();
-    }
-    const textTyping = async(text, element) => {
-        if(!typing) { return }
-        element.innerHTML = '';
-        for (let i = 0; i <= text.length; i++) {
-            if (i === text.length) {
-                element.innerHTML = text.replace(/,/g, ',<br/>');
-            } else {
-                const displayText = text.substring(0, i).replace(/,/g, ',<br/>');
-                element.innerHTML = displayText + '|';
-            }
-            await new Promise(resolve => setTimeout(resolve, 100));
-        }
-    };
-
     const [currentSection, setCurrentSection] = useState("");
+    const onButtonClick = () => {
+        const link = document.createElement("a");
+        link.href = resume;
+        link.download = "Tran Viet Khoa Resume_final.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }; 
     return (
        <div className="portfolio">
             <div className="top-bar">
@@ -142,9 +54,9 @@ const Portfolio = () => {
                 </div>
                 <div className="link-bar">
                     <ul>
-                        <li>Resume</li>
-                        <li>Github</li>
-                        <li>Linkedin</li>
+                        <li onClick={onButtonClick}>Resume</li>
+                        <li><a href="https://github.com/Michael-coding06" target="_blank">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/khoatranviet/">Linkedin</a></li>
                     </ul>
                 </div>
             </div>

@@ -236,17 +236,31 @@ body {
     background-color: rgba(112, 243, 243, 0.15);
     border-top: 1.5px solid #1e5555;
     border-bottom: 1.5px solid #1e5555;
+    /* padding: 15px; */
+    display: flex;
     padding: 15px;
 }
-.run-terminal {
-    width: 100%;
+
+.terminal-content, .run-terminal {
+    /* width: 100%; */
     background-color: transparent;
     border: none;
     outline: none;
     color: #389090;
-    font-size: bold;
+    font-weight: bold;
     font-size: 14px;
-    padding: 8px 20px;
+    padding: 8px 10px;
+}
+
+.run-terminal {
+  color: #00ffff;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 10px;
 }
 
 .text-secondary{
@@ -310,6 +324,7 @@ mark{
   transition: all 0.3s ease;
   align-items: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .tech-item:hover {
@@ -716,9 +731,10 @@ mark{
     font-size: 24px;
   }
   
-  .run-terminal {
+  .terminal-content, .run-terminal {
     font-size: 12px;
-    padding: 6px 15px;
+    font-weight: bold;
+    padding: 6px 4px;
   }
   
   .floating-skills {

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './portfolio.css';
 import khoa from './img/Khoa.png'
-import resume from './img/Tran Viet Khoa Resume_final.pdf'
-import { data } from "./data";
+import { data, onButtonClick } from "./data";
 const Portfolio = () => {
     const typeWriter = async () => {
         const list_of_text = [
@@ -38,14 +37,6 @@ const Portfolio = () => {
         typeWriter();
     }, []);
     const [currentSection, setCurrentSection] = useState("");
-    const onButtonClick = () => {
-        const link = document.createElement("a");
-        link.href = resume;
-        link.download = "Tran Viet Khoa Resume_final.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }; 
     return (
        <div className="portfolio">
             <div className="top-bar">
@@ -56,7 +47,7 @@ const Portfolio = () => {
                     <ul>
                         <li onClick={onButtonClick}>Resume</li>
                         <li><a href="https://github.com/Michael-coding06" target="_blank">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/khoatranviet/">Linkedin</a></li>
+                        <li><a href="https://www.linkedin.com/in/khoatranviet/" target="_blank">Linkedin</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,6 +61,9 @@ const Portfolio = () => {
                             <div className="info-heading">Name</div>
                             <div className="info">Khoa, Tran Viet (or Michael)</div>
                             
+                            <div className="info-heading">Role</div>
+                            <div className="info">Software Engineer / Machine Learning Engineer</div>
+
                             <div className="info-heading">LOCATION</div>
                             <div className="info">Singapore</div>
                             
@@ -93,7 +87,8 @@ const Portfolio = () => {
                         {data[currentSection]}
                     </div>
                     <div className="terminal">
-                        <input type="text" className="run-terminal" value = {currentSection}
+                        <h3 className="terminal-content">Khoa@portfolio: ~$ npm run: </h3>
+                        <input type="text" className="run-terminal block-cursor" value = {currentSection} placeholder="About"
                         onChange={(e) => {
                             setCurrentSection(e.target.value);
                         }}/>

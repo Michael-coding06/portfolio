@@ -12,7 +12,7 @@ import openai from './img/skills/open ai api.png';
 import fintech from './img/experience/NUS_fintech.jpg'
 import vnya from './img/CCAs/VNYA.jpg'
 
-import resume from './img/Tran Viet Khoa Resume_final.pdf'
+import resume from './img/Tran Viet Khoa Resume.pdf'
 import orbital_document from './img/Tran Viet Khoa Orbital.pdf'
 const projects = [
     {
@@ -55,7 +55,7 @@ const techStacks = {
 export const onButtonClick = () => {
         const link = document.createElement("a");
         link.href = resume;
-        link.download = "Tran Viet Khoa Resume_final.pdf";
+        link.download = "Tran Viet Khoa Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

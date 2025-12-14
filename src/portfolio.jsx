@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './portfolio.css';
 import khoa from './img/Khoa.png'
-import resume from './img/Tran Viet Khoa Resume_final.pdf'
+import resume from './img/Tran Viet Khoa Resume.pdf'
 import { data } from "./data";
 const Portfolio = () => {
     const typeWriter = async () => {

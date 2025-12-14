@@ -141,8 +141,7 @@ export const data = {
                     <div className='duration'>August 2025 - Present</div>
                     <div className='experience-detail'>
                         <p className='detail-item'><mark>🗡</mark> Engaged in a comprehensive 3-month training program focused on foundational and advanced machine learning concepts, including supervised and unsupervised learning, neural networks, and deep learning.</p>
-                        <p className='detail-item'><mark>🗡</mark> Gained hands-on experience with popular machine learning libraries such as TensorFlow and PyTorch through practical assignments and projects.</p>
-                        <p className='detail-item'><mark>🗡</mark> Collaborated with peers on mini-projects, enhancing teamwork and problem-solving skills in real-world scenarios.</p>
+                        <p className='detail-item'><mark>🗡</mark> Gained hands-on experience with popular machine learning libraries such as TensorFlow and PyTorch through practical assignments.</p>
                     </div>
                 </div>
                 

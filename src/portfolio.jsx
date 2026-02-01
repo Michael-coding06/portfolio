@@ -5,7 +5,7 @@ import { data, onButtonClick } from "./data";
 const Portfolio = () => {
     const typeWriter = async () => {
         const list_of_text = [
-            'AI Agent Whisperer',
+            'Software Engineer',
             "404 Problem Solver",
             'Stack Overflow Searcher',
             '3 Language Polyglot',
@@ -62,7 +62,7 @@ const Portfolio = () => {
                             <div className="info">Khoa, Tran Viet (or Michael)</div>
                             
                             <div className="info-heading">Role</div>
-                            <div className="info">Software Engineer / Machine Learning Engineer</div>
+                            <div className="info">Software Engineer</div>
 
                             <div className="info-heading">LOCATION</div>
                             <div className="info">Singapore</div>

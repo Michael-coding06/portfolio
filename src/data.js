@@ -1,5 +1,6 @@
 import timetable from './img/projects/timetable.png';
 import portfolio from './img/projects/portfolio.png';
+import kforum from './img/projects/kforum.png'
 
 import node from './img/skills/node.png';
 import react from './img/skills/react.png';
@@ -15,6 +16,17 @@ import vnya from './img/CCAs/VNYA.jpg'
 import resume from './img/Tran Viet Khoa Resume.pdf'
 import orbital_document from './img/Tran Viet Khoa Orbital.pdf'
 const projects = [
+    {
+        title: "KForum",
+        description: (
+            <>
+            <mark>📝KForum</mark> High-concurrency real-time forum engineered for <mark>horizontal scalability and low latency </mark>. Features bi-directional messaging, JWT security with HTTP-only cookies, and automated data persistence.
+            </>
+        ),
+        image: kforum,
+        codeLink: "https://github.com/Michael-coding06/KForum.git",
+        techStacks: ['React.js', 'TypeScript', 'MUI', 'Node.js', 'Golang', 'PostgreSQL', 'Socket.io', 'Redis', 'AWS', 'Docker']
+    },
     {
         title: "NUS Schedule Boss",
         description: (
@@ -165,7 +177,7 @@ export const data = {
                         Machine Learning Trainee
                         <span className='work-place'>@ NUS Fintech Society</span>
                     </h3>
-                    <div className='duration'>August 2025 - Present</div>
+                    <div className='duration'>August 2025 - December 2025</div>
                     <div className='experience-detail'>
                         <p className='detail-item'><mark>🗡</mark> Engaged in a comprehensive 3-month training program focused on foundational and advanced machine learning concepts, including supervised and unsupervised learning, neural networks, and deep learning.</p>
                         <p className='detail-item'><mark>🗡</mark> Gained hands-on experience with popular machine learning libraries such as TensorFlow and PyTorch through practical assignments.</p>

@@ -2,7 +2,7 @@ name: Build and Deploy React App
 
 on:
   push:
-    branches: [ "version 3" ]  
+    branches: [ "version3" ]  
   workflow_dispatch:
 
 permissions:

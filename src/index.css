@@ -1,15 +1,19 @@
+@import './data/colors.css';
+
 body {
   margin: 0;
   font-family: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000000;
-  color: #E4FD75;
+
+  background-color: var(--BACKGROUND_COLOR);
+  color: var(--TEXT_COLOR);
 }
 
 code {
   font-family: 'JetBrains Mono', 'SF Mono', Monaco, Consolas, monospace;
-  background-color: #1f1f1f;
+  background-color: var(--BACKGROUND_BOX);
+  color: var(--TEXT_COLOR);
   padding: 2px 6px;
   border-radius: 4px;
 }

@@ -1,0 +1,7 @@
+:root {
+  --BACKGROUND_COLOR: #0B0F1A;
+  --BACKGROUND_BOX: #0F172A;
+  --TEXT_COLOR_HIGHLIGHT: #1a1a1a;
+  --TEXT_COLOR: #ffffff;
+  --Text_COLOR_HIGHLIGHT2: linear-gradient(to right, #818cf8, #60a5fa);
+}

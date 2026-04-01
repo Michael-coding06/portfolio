@@ -95,7 +95,7 @@ const HomePage = () => {
         onWheel={(e) => e.stopPropagation()} 
         >
         <Suspense fallback={<span>Loading...</span>}>
-            {/* <Spline scene="assets/scene.splinecode" /> */}
+            <Spline scene="assets/scene.splinecode" />
         </Suspense>
       </Box>
     </Box>
